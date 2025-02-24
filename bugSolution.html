@@ -1,0 +1,10 @@
+To resolve this issue, instead of using `@apply` directly with a pseudo-class in the parent element, apply the class to the child element and then style the child element's hover state. This ensures that the hover styles are applied correctly.
+
+```html
+<div class="bg-gray-200 p-4">
+  <button class="hover:bg-blue-500 hover:text-white p-2">
+    Hover Me
+  </button>
+</div>
+```
+In this corrected example, the `hover:bg-blue-500` and `hover:text-white` classes are applied directly to the button element, resulting in the expected hover effect on the button itself, not the parent div.
