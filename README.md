@@ -1,0 +1,3 @@
+# TailwindCSS @apply Directive Issue with Pseudo-classes
+
+This repository demonstrates a problem encountered when using Tailwind's `@apply` directive with pseudo-classes like `&:hover`. The issue stems from the direct application of the pseudo-class to the parent element, rather than inheriting to its children.  This leads to an unexpected application of styles.  The solution outlines a workaround to achieve the desired result.
